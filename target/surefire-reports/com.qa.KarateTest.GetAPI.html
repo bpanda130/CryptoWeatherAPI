@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.qa.KarateTest.GetAPI</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-01-07 10:30:35 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:21]">[1.1:21] Verifying the Weather Get API with dataType as 'rhrread' and Language as 'en' </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/qa/KarateTest/GetAPI.feature</span><span class="feature-description">This Feature file contains validation Test for Weather Get API.</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:21]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">Weather_RHRREAD</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.1:21]</span><span class="scenario-name">Verifying the Weather Get API with dataType as 'rhrread' and Language as 'en' </span>
+</div>
+<div class="scenario-time passed">ms: 7564</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:21]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://data.weather.gov.hk/weatherAPI/opendata/weather.php'</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="preformatted" data-parent="1">22:30:27.593 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1.1:21]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[1.1:21]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* configure ssl = true</div>
+</div>
+<div class="time-cell passed">3568</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Given params { dataType: 'rhrread', lang: 'en'}</div>
+</div>
+<div class="time-cell passed">375</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">3558</div>
+</div>
+<div class="preformatted" data-parent="5">22:30:31.953 request:
+1 &gt; GET https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&amp;lang=en
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: data.weather.gov.hk
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_191)
+
+22:30:35.226 response time in milliseconds: 3232.93
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Security-Policy: [default-src 'self'; frame-ancestors 'self' *;, frame-ancestors 'self' gowise2.weather.gov.hk gowise2.hko.ccgo.hksarg kids.weather.gov.hk;]
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 07 Jan 2021 14:30:22 GMT
+1 &lt; Keep-Alive: timeout=10, max=100
+1 &lt; Referrer-Policy: no-referrer-when-downgrade
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Frame-Options: [SAMEORIGIN, SAMEORIGIN]
+{"rainfall":{"data":[{"unit":"mm","place":"Central &amp;amp; Western District","max":0,"main":"FALSE"},{"unit":"mm","place":"Eastern District","max":0,"main":"FALSE"},{"unit":"mm","place":"Kwai Tsing","max":0,"main":"FALSE"},{"unit":"mm","place":"Islands District","max":0,"main":"FALSE"},{"unit":"mm","place":"North District","max":0,"main":"FALSE"},{"unit":"mm","place":"Sai Kung","max":0,"main":"FALSE"},{"unit":"mm","place":"Sha Tin","max":0,"main":"FALSE"},{"unit":"mm","place":"Southern District","max":0,"main":"FALSE"},{"unit":"mm","place":"Tai Po","max":0,"main":"FALSE"},{"unit":"mm","place":"Tsuen Wan","max":0,"main":"FALSE"},{"unit":"mm","place":"Tuen Mun","max":0,"main":"FALSE"},{"unit":"mm","place":"Wan Chai","max":0,"main":"FALSE"},{"unit":"mm","place":"Yuen Long","max":0,"main":"FALSE"},{"unit":"mm","place":"Yau Tsim Mong","max":0,"main":"FALSE"},{"unit":"mm","place":"Sham Shui Po","max":0,"main":"FALSE"},{"unit":"mm","place":"Kowloon City","max":0,"main":"FALSE"},{"unit":"mm","place":"Wong Tai Sin","max":0,"main":"FALSE"},{"unit":"mm","place":"Kwun Tong","max":0,"main":"FALSE"}],"startTime":"2021-01-07T20:45:00+08:00","endTime":"2021-01-07T21:45:00+08:00"},"icon":[60],"iconUpdateTime":"2021-01-07T18:00:00+08:00","uvindex":"","updateTime":"2021-01-07T22:02:00+08:00","temperature":{"data":[{"place":"King's Park","value":11,"unit":"C"},{"place":"Hong Kong Observatory","value":12,"unit":"C"},{"place":"Wong Chuk Hang","value":13,"unit":"C"},{"place":"Ta Kwu Ling","value":9,"unit":"C"},{"place":"Lau Fau Shan","value":10,"unit":"C"},{"place":"Tai Po","value":10,"unit":"C"},{"place":"Sha Tin","value":11,"unit":"C"},{"place":"Tuen Mun","value":10,"unit":"C"},{"place":"Tseung Kwan O","value":11,"unit":"C"},{"place":"Sai Kung","value":10,"unit":"C"},{"place":"Cheung Chau","value":11,"unit":"C"},{"place":"Chek Lap Kok","value":11,"unit":"C"},{"place":"Tsing Yi","value":12,"unit":"C"},{"place":"Shek Kong","value":10,"unit":"C"},{"place":"Tsuen Wan Ho Koon","value":9,"unit":"C"},{"place":"Tsuen Wan Shing Mun Valley","value":11,"unit":"C"},{"place":"Hong Kong Park","value":12,"unit":"C"},{"place":"Shau Kei Wan","value":11,"unit":"C"},{"place":"Kowloon City","value":10,"unit":"C"},{"place":"Happy Valley","value":13,"unit":"C"},{"place":"Wong Tai Sin","value":11,"unit":"C"},{"place":"Stanley","value":12,"unit":"C"},{"place":"Kwun Tong","value":11,"unit":"C"},{"place":"Sham Shui Po","value":11,"unit":"C"},{"place":"Kai Tak Runway Park","value":12,"unit":"C"},{"place":"Yuen Long Park","value":10,"unit":"C"},{"place":"Tai Mei Tuk","value":10,"unit":"C"}],"recordTime":"2021-01-07T22:00:00+08:00"},"warningMessage":["The Fire Danger Warning is Yellow and the fire risk is high.","The Cold Weather Warning is now in force. Cold weather might cause adverse health effects. Members of the public should take care to keep warm."],"mintempFrom00To09":"","rainfallFrom00To12":"","rainfallLastMonth":"","rainfallJanuaryToLastMonth":"","tcmessage":"","humidity":{"recordTime":"2021-01-07T22:00:00+08:00","data":[{"unit":"percent","value":67,"place":"Hong Kong Observatory"}]}}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And match responseType == 'json'</div>
+</div>
+<div class="time-cell passed">30</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And match response.humidity.data[0].place == 'Hong Kong Observatory'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Then match response.temperature.data[0].unit == '#string'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then match response.temperature.data[0].value == '#number'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Then match response.temperature.data[0].place == '#string'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
