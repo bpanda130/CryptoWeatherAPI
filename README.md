@@ -1,0 +1,2 @@
+# CryptoWeatherAPI
+Weather API Validation
